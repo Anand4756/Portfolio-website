@@ -5,15 +5,17 @@
     padding: 0;
     box-sizing: border-box;
     
-   
 }
 body{
   font-family: 'Lobster', cursive;
   padding: 0 20px;
   background-color: lightblue;
+
 }
-html {
+html{
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: red green;
 }
 
 .header{
@@ -162,7 +164,7 @@ section{
    padding: 3rem 0;
 }
 section.project{
-height: 1300px;
+height: 1600px;
 background-color:#fff;
 }
 
@@ -190,12 +192,27 @@ columns: 2;
 }
 .project-disc{
   padding: 200px 0;
+  width: 80%;
+  text-align: center;
+
+}
+.project-disc h2{
+  padding: 15px;
+  font-size: 40px;
+  background-color: lightblue;
+  border-radius: 10px 20px 30px;
+}
+.project-disc p{
+  padding: 10px;
+ font-size: 27px; 
+ background-color: lightblue;
+ border-radius: 10px 20px 30px;
 }
 
 .projects img{
   width: 79%;
   height: 300px;
-  margin-top: 10%;
+  margin-top: 1%;
   box-shadow: 10px 10px 8px 10px #727272;
   border: 8px solid rgb(231, 213, 213);
   margin-left: 44px;

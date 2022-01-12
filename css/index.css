@@ -19,21 +19,21 @@ html{
   width: 13px;
 }
 ::-webkit-scrollbar-track {
-  background: #43cea2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #43cea2;  
+background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  
+background: linear-gradient(to right, #185a9d, #43cea2); 
 
 }
 ::-webkit-scrollbar-thumb{
-  background: #360033;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #360033;  
+background: -webkit-linear-gradient(to right, #0b8793, #360033);  
+background: linear-gradient(to right, #0b8793, #360033); 
 
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #D38312;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #D38312; 
+background: -webkit-linear-gradient(to right, #A83279, #D38312); 
+background: linear-gradient(to right, #A83279, #D38312);
 ; 
 }
 
@@ -289,6 +289,28 @@ section.services{
   margin: 30px 0;
   
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80%;
+  margin-left: 50px;
+  text-align: center;
+  width: 77%;
+  border-radius: 50px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.image-grid:hover .overlay {
+  opacity: 1;
+}
+.overlay .text{
+  font-size: 34px;
+}
+
 
 .all-services{
 display: grid;
@@ -301,13 +323,11 @@ grid-row-gap: 2rem;
 
 .all-services .image-grid img{
  
-  border: 8px solid rgb(56, 52, 52);
+  border: 8px solid rgb(255, 255, 255);
   margin-left: 50px;
   border-radius: 50px;
 }
-.all-services .image-grid img:hover{
-  border: 8px solid rgb(255, 255, 255);
-}
+
 
 .all-services p{
   color: white;

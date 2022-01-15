@@ -671,28 +671,31 @@ section.services{
     border: 8px solid rgb(231, 213, 213*/
    }
    .icons{
-   
-  display: none;
-    margin-top: 8%;
+    padding-bottom: 30%;
+    margin-top: 0%;
+
     height: 0px;
-    margin-right: 130px;
-    
+
+    justify-content: center;
+    display: flex;
+    position: start;
+
   }
   .right-text{
     
-    margin: 20px 0;
+    margin: 70px 0;
     text-align: center;
     
  
     
   }
   .right-text h2{
+    margin-top: 30px;
     text-align: center;
     font-size: 19px;
   }
   .right-img{
-    display:none; 
-
+    display:none;  
   }
   .form-contact{
  margin:0;
@@ -715,7 +718,7 @@ text-align: center;
       width: 80%;
     }
     section.about-us{
-      height: 530px;
+      height: max-content;
       
       }
 }

@@ -14,6 +14,12 @@ body{
 
 }
 
+::selection{
+  color: white;
+  background: black;
+
+}
+
 ::-webkit-scrollbar {
   width: 13px;
 }
@@ -275,7 +281,7 @@ columns: 2;
 }
 
 .layout {
-
+  
   width: 906px;
   /*height: 868px;*/
   display: grid;
@@ -583,7 +589,6 @@ margin-top: 110px;
     display: none;
     }
   .header{
-    
     overflow: hidden; 
  }
   .left-text { 

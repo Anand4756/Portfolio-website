@@ -80,7 +80,7 @@
     <h2>Constructor Website</h2>
     <p>This website is made using Nodejs, ejs, Mongodb. 
     <p>This website is like fiverr but here gig are created related construction of houses. 
-        <p><a href="" target="_blank">LINK</a>
+        <p><a href="https://gr8builders.herokuapp.com/" target="_blank">LINK</a>
      
 </div>
 </div>
@@ -116,6 +116,16 @@
 <h2 style="text-align: center; margin-top: -30px;">OTHER PROJECTS</h2>
 
 <div class="layout">
+    <div>
+     <h2>Green Theme</h2> 
+     <p>
+        A theme extension created for<b>Microsoft Vs code</b> This theme contians two types of option to select.
+        <p>More than <b>100 downloads</b> in vscode.
+    </p>
+    <p><a href="https://github.com/Anand4756/theme" target="_blank"><img src="github.png"></a>
+    <a href="https://marketplace.visualstudio.com/items?itemName=AnandKaushik.Greentheme" target="_blank"><img src="https://img.icons8.com/ios/50/000000/domain.png"/></a>
+    </p>
+  </div>
   <div>
      <h2>Bygone Culture of Bihar</h2> 
      <p>
@@ -283,7 +293,8 @@
 <h2>My name is <span class="myname">ANAND</span></h2>
 <p>I am a creative designer, </p>
 <p>Backend web Developer,</p>
-<p>Programmer and freelancer</p>
+<p>Programmer.</p>
+
 
 <button><a href="AnandResume.pdf" download="AnandResume">DOWNLOAD CV</a></button>
 </div>
@@ -316,6 +327,12 @@
 
 </section>
 
+  <div id="loader" class="center"><img src="loading.gif"></div>
+
+
+
+
+
 <script>
 var MenuItems = document.getElementById("MenuItems");
     MenuItems.style.maxHeight="0px";
@@ -335,6 +352,30 @@ var MenuItems = document.getElementById("MenuItems");
 //     menuList.style.maxHeight = "0px";
 // }
 // }
+
+
+
+ document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                 document.querySelector(
+                  "body").style.background = "#1F0446";
+                document.querySelector(
+                  "#loader").style.visibility = "visible";
+            } 
+           
+
+            else {
+                document.querySelector(
+                  "#loader").style.display = "none";
+                document.querySelector(
+                  "body").style.background = "";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+            ;
+        };
 
 </script>
 

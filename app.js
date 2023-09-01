@@ -43,7 +43,7 @@ app.post("/", function (req, res) {
           pass: process.env.PASS,
         },
       });
-      console.log(process.env.USER, "---", process.env.pass);
+      // console.log(process.env.USER, "---", process.env.pass);
       var mailOptions = {
         from: process.env.USER,
         to: req.body.username,

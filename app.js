@@ -7,10 +7,19 @@ const app = express();
 
 app.use(express.static("css"));
 app.use(bodyparser.urlencoded({ extended: true }));
-mongoose.connect(
-  `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.5lsni.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
-  { useNewUrlParser: true, useUnifiedTopology: true }
-);
+
+const mongocompass = process.env.DB_URI;
+
+try {
+  mongoose.connect(
+    mongocompass,
+    { useNewUrlParser: true, useUnifiedTopology: true },
+    () => console.log("Mongoose is connected...")
+  );
+} catch (e) {
+  console.log(e);
+}
+
 //mongodb
 const portfolioSchema = {
   email: String,
